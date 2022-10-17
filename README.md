@@ -11,7 +11,7 @@ Create a file called `config.txt` and paste every file you want to overwrite lin
 You can use the `config.txt.sample` as a reference or rename it right away. Make sure you change the user directory to yours.
 
 ## Start
-To start the program, just run the `start.bat` file in cmd or powershell.
+To start the program, just run the `start.bat` in cmd or `start.ps1` in powershell.
 
 ## Version
-0.1 Alpha
+0.2 Alpha
