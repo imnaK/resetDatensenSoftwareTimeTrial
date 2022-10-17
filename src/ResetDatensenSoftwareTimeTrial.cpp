@@ -34,9 +34,14 @@ bool writeToFile(const string file_path, const long long& millis_since_unix_epoc
 int main(const int argc, const char* argv[]) {
 	const long long millis_since_unix_epoch = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
 
+	if (argc < 2){
+		std::cerr << "Error: Please add a path to the config file as first argument." << std::endl;
+		return 1;
+	}
+
 	const vector<string> files_to_change = readConfig(argv[1]);
 	for (int i = 0; i < files_to_change.size(); ++i)
-		writeToFile(files_to_change.at(i), millis_since_unix_epoch);
+		cout << (writeToFile(files_to_change.at(i), millis_since_unix_epoch) ? ("File \"" + files_to_change.at(i) + "\" sucessfully changed.") : ("Failed to change file \"" + files_to_change.at(i) + "\".")) << std::endl;
 
     return 0;
 }
