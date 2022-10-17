@@ -7,8 +7,11 @@ This program is for educational purposes only. If you want to use the software f
 I assume no liability for damage to the file system, the computer, software or anything else.
 
 ## Setup
-Create a file called "config.txt" and paste every file you want to overwrite line by line in it.
-You can use the config.txt.sample as a reference or rename it right away. Make sure you change the user directory to yours.
+Create a file called `config.txt` and paste every file you want to overwrite line by line in it.
+You can use the `config.txt.sample` as a reference or rename it right away. Make sure you change the user directory to yours.
+
+## Start
+To start the program, just run the `start.bat` file in cmd or powershell.
 
 ## Version
 0.1 Alpha
