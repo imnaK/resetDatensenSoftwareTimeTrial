@@ -1,1 +1,1 @@
-./bin/ResetDatensenSoftwareTimeTrial.exe "config.txt"
+bin/ResetDatensenSoftwareTimeTrial.exe "config.txt"
